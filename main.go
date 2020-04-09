@@ -30,7 +30,7 @@ func StartWorkers() {
 // StartGin starts gin web server with setting router.
 func StartGin() {
 	gin.SetMode(gin.ReleaseMode)
-
+a
 	router := gin.New()
 	router.Use(rateLimit, gin.Recovery())
 	router.LoadHTMLGlob("resources/*.templ.html")
